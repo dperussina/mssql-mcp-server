@@ -880,7 +880,7 @@ function registerDiscoverTablesTool(server, registerWithAlias) {
                         try {
                             const countResult = await executeQuery(`
                                 SELECT 
-                                    SUM(p.rows) AS RowCount
+                                    SUM(p.rows) AS [RowCount]
                                 FROM 
                                     sys.partitions p
                                 INNER JOIN 
